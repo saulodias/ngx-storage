@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-storage": {
+    "ngx-storage": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ng-storage",
+            "outputPath": "dist/ngx-storage",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-storage:build:production"
+              "buildTarget": "ngx-storage:build:production"
             },
             "development": {
-              "buildTarget": "ng-storage:build:development"
+              "buildTarget": "ngx-storage:build:development"
             }
           },
           "defaultConfiguration": "development"
