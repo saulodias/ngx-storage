@@ -12,7 +12,7 @@ NgxStorage provides a set of property decorators for storing data in local or se
 
 Use the `LocalStorage` decorator to store data in local storage.
 ```typescript
-import { LocalStorage } from 'ng-storage';
+import { LocalStorage } from 'ngx-storage';
 import { BehaviorSubject } from 'rxjs';
 
 class TestClass {
@@ -25,7 +25,7 @@ class TestClass {
 
 Use the `SessionStorage` decorator to store data in session storage.
 ```typescript
-import { SessionStorage } from 'ng-storage';
+import { SessionStorage } from 'ngx-storage';
 import { BehaviorSubject } from 'rxjs';
 
 class TestClass {
@@ -38,7 +38,7 @@ class TestClass {
 
 You can also provide a custom JSON converter for more complex types.
 ```typescript
-import { JsonConverter, SessionStorage } from 'ng-storage';
+import { JsonConverter, SessionStorage } from 'ngx-storage';
 import { BehaviorSubject } from 'rxjs';
 
 type CustomType = { date: Date };
@@ -60,7 +60,7 @@ Here's an example of how to use these decorators in an Angular service:
 ```typescript
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { LocalStorage, SessionStorage } from 'ng-storage';
+import { LocalStorage, SessionStorage } from 'ngx-storage';
 
 @Injectable({
     providedIn: 'root',
